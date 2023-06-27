@@ -1,0 +1,10 @@
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+[build]
+base = "."
+command = "npm run build"
+publish = ".next"
+
+[build.environment]
+NEXT_PRIVATE_TARGET = "true"

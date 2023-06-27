@@ -1,0 +1,122 @@
+.container-movies {
+    display: flex;
+    overflow-x: scroll;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    gap: 10px;
+}
+
+.AllMoviesCard {
+    display: inline-block;
+    transition: transform .2s;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 200px;
+    height: 280px;
+    z-index: 10;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.AllMoviesCard:hover {
+    transform: scale(1.03);
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.AllMoviesCard-img {
+    // height: 280px;
+    border-radius: 10px;
+}
+
+
+.AllMoviesCard-overlay {
+    position: absolute;
+    padding: 10px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.AllMoviesCard-overlay:hover {
+    opacity: 1;
+}
+
+.AllMoviesCard-rating,
+.AllMoviesCard-rumTime {
+    display: flex;
+    align-items: center;
+}
+
+.AllMoviesCard-rumTime {
+    gap: 10px;
+}
+
+.AllMoviesCard-img span {
+    background-color: red;
+}
+
+// 
+.card_recomendation {
+    display: inline-block;
+    transition: transform .2s;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 500px;
+    height: 280px;
+    z-index: 10;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.Img-notfound {
+    width: 200px;
+    height: 280px;
+    background-color: rgb(149, 149, 149);
+    text-align: center;
+
+    h2 {
+        padding-top: 5rem;
+    }
+
+    p {
+        padding-top: 2rem;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 60rem) {
+    .AllMoviesCard-img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .card_recomendation {
+        width: 200px;
+
+    }
+}

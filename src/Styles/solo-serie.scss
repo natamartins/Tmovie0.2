@@ -1,0 +1,44 @@
+.card_solo-seasons {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+.card_solo-seasonsAll {
+    display: flex;
+    overflow-x: scroll;
+
+    padding: 10px;
+    margin-bottom: 5rem;
+    gap: 10px;
+}
+
+.card_solo-company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    img {
+        width: 200px;
+    }
+}
+
+.card_solo-similar h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card_solo-info {
+    margin-bottom: 15rem;
+}

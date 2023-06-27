@@ -1,0 +1,43 @@
+.container {
+    text-align: center;
+}
+
+.container form {
+    width: 230px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+
+    input {
+        padding: 5px;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.box-movieAll {
+    width: 100%;
+    max-width: 70%;
+    margin: auto;
+    gap: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 5rem;
+}
