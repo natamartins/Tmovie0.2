@@ -38,9 +38,9 @@ export default function RootLayout({
           <div>
             <h2><span>T</span>movies</h2>
             <ul>
-              <li><Link href="">Home</Link></li>
-              <li><Link href="">Movie</Link></li>
-              <li><Link href="">Serie</Link></li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/">Movie</Link></li>
+              <li><Link href="/">Serie</Link></li>
             </ul>
             <ul>
               <li><Link href="">About</Link></li>
