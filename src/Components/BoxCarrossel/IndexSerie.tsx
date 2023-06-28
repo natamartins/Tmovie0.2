@@ -11,7 +11,7 @@ const Index = ({ data }: any) => {
         <div style={{ position: 'relative', marginBottom: '10rem' }}>
             <Carousel
                 showThumbs={false}
-                autoPlay={false}
+                autoPlay={true}
                 transitionTime={2}
                 infiniteLoop={true}
                 showStatus={false}

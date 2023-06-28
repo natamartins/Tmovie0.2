@@ -11,7 +11,7 @@ const Index = ({ data }: any) => {
         <div className='box-carrossel'>
             <Carousel
                 showThumbs={false}
-                autoPlay={false}
+                autoPlay={true}
                 transitionTime={2}
                 infiniteLoop={true}
                 showStatus={false}

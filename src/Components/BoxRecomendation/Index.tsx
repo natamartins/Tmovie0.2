@@ -4,7 +4,7 @@ import CardMovies from '../CardMovies/CardRecomendation'
 
 const Index = () => {
     const { data }: any = useFetch('/trending/all/day?')
-
+    console.log("All ==>", data)
     return (
         <div className='container-movies'>
             {

@@ -66,26 +66,27 @@ const page = ({ params }: any) => {
                 <img className='solo-movie-img' src={`${REACT_IMG_PATH}${movieId.backdrop_path}`} alt="" />
             </div>
             <div className='info-movie'>
+
                 <div className='info-movie_cardImg'>
                     {
                         movieId ? <img className='info-movie_img' src={`${REACT_IMG_PATH}${movieId && movieId.poster_path}`} alt="" /> : <span />
                     }
                 </div>
-                <div>
-                    <Modal
-                        open={open}
-                        onClose={handleClose}
-                    >
-                        <Box sx={style}>
-                            <div className='playWeb'>
-                                {select && playWeb()}
-                            </div>
-                            <div className='playMobile'>
-                                {select && playMobile()}
-                            </div>
-                        </Box>
-                    </Modal>
-                </div>
+
+                <Modal
+                    open={open}
+                    onClose={handleClose}
+                >
+                    <Box sx={style}>
+                        <div className='playWeb'>
+                            {select && playWeb()}
+                        </div>
+                        <div className='playMobile'>
+                            {select && playMobile()}
+                        </div>
+                    </Box>
+                </Modal>
+
                 <div className='info-movie_cardInfo'>
                     <h1>{movieId.title}</h1>
                     <div>

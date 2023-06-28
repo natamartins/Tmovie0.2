@@ -26,11 +26,9 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
     position: absolute;
-    top: 35rem;
+    top: 25rem;
     left: 0;
-    bottom: 0;
     right: 0;
     gap: 2rem;
     color: #fff;
@@ -100,6 +98,7 @@
         flex-direction: column;
         text-align: center;
         padding: 10px;
+        margin-top: -10rem;
     }
 
     .info-movie_cardInfo {

@@ -22,7 +22,7 @@ const CardMovies = ({ movie }: CardMovies) => {
         >
             <div className='AllMoviesCard card_allmovie'>
                 {
-                    movie.poster_path ? <img className='AllMoviesCard-img' src={`${REACT_IMG_PATH}${movie && movie.poster_path}`} alt="" />
+                    movie.poster_path ? <img className='AllMoviesCard-img' src={`${REACT_IMG_PATH}${movie.poster_path && movie.poster_path}`} alt="" />
                         :
                         <div className='Img-notfound'>
                             <h2>Imagem não disponivel!</h2>

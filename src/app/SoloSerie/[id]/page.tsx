@@ -33,9 +33,8 @@ const style = {
 
 const page = ({ params }: any) => {
     const { movieId }: any = useFetchId(`/tv/${params.id}?`)
-    const { fetctVd, select, video }: any = useFetchVideo('tv')
 
-    console.log("Video ==>", video)
+    const { fetctVd, select, video }: any = useFetchVideo('tv')
 
     const date = formatDate(movieId.last_air_date)
 
@@ -66,12 +65,12 @@ const page = ({ params }: any) => {
         <div className='card_solo'>
             <div className='img-background'>
                 <span className='background-botton'></span>
-                <img className='solo-movie-img' src={`${REACT_IMG}${movieId && movieId.backdrop_path}`} alt="" />
+                <img className='solo-movie-img' src={`${REACT_IMG}${movieId.backdrop_path && movieId.backdrop_path}`} alt="" />
             </div>
-            <div className='info-movie card_solo-info'>
+            <div className='info-movie card_solo-infoserie'>
                 <div className='info-movie_cardImg'>
                     {
-                        movieId ? <img className='info-movie_img' src={`${REACT_IMG}${movieId && movieId.poster_path && movieId.poster_path}`} alt="" /> : <span />
+                        movieId ? <img className='info-movie_img' src={`${REACT_IMG}${movieId.backdrop_path && movieId.poster_path && movieId.poster_path}`} alt="" /> : <span />
                     }
                 </div>
                 <div>
@@ -126,7 +125,7 @@ const page = ({ params }: any) => {
                 {
                     movieId.production_companies && movieId.production_companies.map((company: any) => (
                         <div key={company.id}>
-                            <img src={`${REACT_IMG_PATH}${company && company.logo_path}`} alt="" />
+                            <img src={`${REACT_IMG_PATH}${company.logo_path && company.logo_path}`} alt="" />
                         </div>
                     ))
                 }

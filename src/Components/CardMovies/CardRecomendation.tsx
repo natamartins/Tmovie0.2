@@ -18,14 +18,14 @@ interface CardMovies {
     }
 }
 const CardMovies = ({ movie }: CardMovies) => {
-    const typeParams = movie.media_type ? `/SoloMovie/${movie.id}` : `/SoloSerie/${movie.id}`
+    const typeParams = movie.media_type === 'movie' ? `/SoloMovie/${movie.id}` : `/SoloSerie/${movie.id}`
 
     return (
         <Link style={{ textDecoration: "none", color: "white" }} href={typeParams}
         >
             <div className='card_allmovie card_recomendation'>
                 {
-                    movie.poster_path ? <img className='AllMoviesCard-img' src={`${REACT_IMG_PATH}${movie && movie.poster_path}`} alt="" />
+                    movie.poster_path ? <img className='AllMoviesCard-img' src={`${REACT_IMG_PATH}${movie.poster_path && movie.poster_path}`} alt="" />
                         :
                         <div className='Img-notfound'>
                             <h2>Imagem não disponivel!</h2>
