@@ -16,6 +16,9 @@ import Similar from '@/Components/BoxSilimar/Movie'
 
 import formatDate from '@/Utils/formatDate';
 import formatTime from '@/Utils/formatTime';
+import Img from '@/Components/CardImage/ImgBackground'
+import ImgPost from '@/Components/CardImage/ImgPost'
+import Image from 'next/image';
 
 const opts = {
     height: '500',
@@ -63,13 +66,17 @@ const page = ({ params }: any) => {
         <div className='card-solo'>
             <div className='img-background'>
                 <span className='background-botton'></span>
-                <img className='solo-movie-img' src={`${REACT_IMG_PATH}${movieId.backdrop_path}`} alt="" />
+                <Img img={movieId} name={movieId.original_name} />
             </div>
             <div className='info-movie'>
 
                 <div className='info-movie_cardImg'>
                     {
-                        movieId ? <img className='info-movie_img' src={`${REACT_IMG_PATH}${movieId && movieId.poster_path}`} alt="" /> : <span />
+                        movieId
+                            ?
+                            <ImgPost img={movieId} name={movieId.original_name} />
+                            :
+                            <span />
                     }
                 </div>
 
@@ -108,18 +115,34 @@ const page = ({ params }: any) => {
                 </div>
             </div>
 
+            <div className='info-movie_similar'>
+                <h2>Similar</h2>
+                <Similar id={params.id} />
+            </div>
+
             <div className='info-movie_center'>
                 <div className='solo-info-company'>
                     <h1>Empresas Produtoras.</h1>
                     {
                         movieId.production_companies && movieId?.production_companies.map((item: any) => (
-                            <img className='' key={item.id} src={`${REACT_IMG_PATH}${item.logo_path}`} alt="" />
+                            <div key={item.id}>
+                                {
+                                    item.logo_path ?
+                                        <Image
+                                            src={`${REACT_IMG_PATH}${item.logo_path}`}
+                                            alt={item.id}
+                                            layout="responsive"
+                                            width={100}
+                                            height={100}
+                                            priority={false}
+                                        />
+                                        : ''
+                                }
+                            </div>
                         ))
                     }
                 </div>
             </div>
-
-            <Similar id={params.id} />
         </div>
     )
 }

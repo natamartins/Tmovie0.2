@@ -40,5 +40,15 @@
 }
 
 .img-background {
-    margin-bottom: 35rem;
+    margin-bottom: 15rem;
+}
+
+.card_solo-companyImg {
+    width: 280px;
+}
+
+@media (max-width: 60rem) {
+    .img-background {
+        margin-bottom: 35rem;
+    }
 }

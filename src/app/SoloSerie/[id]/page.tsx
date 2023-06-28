@@ -18,6 +18,9 @@ import formatTime from '@/Utils/formatTime';
 
 import Similar from '@/Components/BoxSilimar/Serie'
 import CardSeasons from '@/Components/CardSeasos/Index';
+import Img from '@/Components/CardImage/ImgBackground'
+import ImgPost from '@/Components/CardImage/ImgPost'
+import Image from 'next/image';
 
 const opts = {
     height: '500',
@@ -65,12 +68,16 @@ const page = ({ params }: any) => {
         <div className='card_solo'>
             <div className='img-background'>
                 <span className='background-botton'></span>
-                <img className='solo-movie-img' src={`${REACT_IMG}${movieId.backdrop_path && movieId.backdrop_path}`} alt="" />
+                <Img img={movieId} name={movieId.original_name} />
             </div>
             <div className='info-movie card_solo-infoserie'>
                 <div className='info-movie_cardImg'>
                     {
-                        movieId ? <img className='info-movie_img' src={`${REACT_IMG}${movieId.backdrop_path && movieId.poster_path && movieId.poster_path}`} alt="" /> : <span />
+                        movieId
+                            ?
+                            <ImgPost img={movieId} name={movieId.original_name} />
+                            :
+                            <span />
                     }
                 </div>
                 <div>
@@ -124,8 +131,15 @@ const page = ({ params }: any) => {
                 <h2>Company</h2>
                 {
                     movieId.production_companies && movieId.production_companies.map((company: any) => (
-                        <div key={company.id}>
-                            <img src={`${REACT_IMG_PATH}${company.logo_path && company.logo_path}`} alt="" />
+                        <div className='card_solo-companyImg' key={company.id}>
+                            {company.logo_path ? <Image
+                                src={`${REACT_IMG_PATH}${company.logo_path}`}
+                                alt=''
+                                layout="responsive"
+                                width={100}
+                                height={100}
+                                priority={false}
+                            /> : ''}
                         </div>
                     ))
                 }

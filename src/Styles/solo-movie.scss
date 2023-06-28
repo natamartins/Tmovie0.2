@@ -35,14 +35,21 @@
     z-index: 800;
 }
 
+.info-movie_similar {
+    text-align: center;
+}
+
 .info-movie_center {
     max-width: 50rem;
     margin: auto;
 }
 
-.info-movie_img {
-    width: 250px;
-    border-radius: 10px;
+.info-movie_cardImg {
+    img {
+        width: 250px;
+        height: 350px;
+        border-radius: 10px;
+    }
 }
 
 .info-movie-g {
@@ -117,5 +124,9 @@
 
     .playMobile {
         display: block;
+    }
+
+    .info-movie_similar {
+        margin-top: -15rem;
     }
 }

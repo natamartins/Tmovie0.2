@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { REACT_IMG_PATH } from '@/api/Urls'
 
 import { StarIcon } from 'lucide-react'
-
+import Img from '@/Components/CardImage/ImgPost'
 interface CardMovies {
     movie: {
         id: number,
@@ -25,7 +25,7 @@ const CardMovies = ({ movie }: CardMovies) => {
             <div className='AllMoviesCard card_allmovie'>
                 {
                     movie.poster_path ?
-                        <img className='AllMoviesCard-img' src={`${REACT_IMG_PATH}${movie.poster_path && movie.poster_path}`} alt="" />
+                        <Img img={movie} name={movie.title} />
                         :
                         <div className='Img-notfound'>
                             <h2>Imagem não disponivel!</h2>

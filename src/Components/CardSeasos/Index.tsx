@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { StarIcon } from 'lucide-react'
 
 import { REACT_IMG_PATH } from '@/api/Urls'
-
+import Img from '@/Components/CardImage/ImgPost'
 interface CardSeasons {
     seasons: {
         id: number,
@@ -22,7 +22,9 @@ const CardSeasons = ({ seasons }: CardSeasons) => {
         >
             <div className='AllMoviesCard card_allmovie'>
                 {
-                    seasons.poster_path ? <img className='AllMoviesCard-img' src={`${REACT_IMG_PATH}${seasons.poster_path && seasons.poster_path}`} alt="" />
+                    seasons.poster_path
+                        ?
+                        <Img img={seasons} name={seasons.name} />
                         :
                         <div className='Img-notfound'>
                             <h2>Imagem não disponivel!</h2>

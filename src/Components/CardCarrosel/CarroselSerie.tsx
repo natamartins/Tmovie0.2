@@ -1,8 +1,8 @@
-import { REACT_IMG_PATH } from '@/api/Urls'
-import { StarIcon } from 'lucide-react'
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
+import { StarIcon } from 'lucide-react'
 
+import Img from '@/Components/CardImage/ImgBackground'
 interface ItemsType {
     movie: {
         id: number,
@@ -15,13 +15,14 @@ interface ItemsType {
 }
 
 const Carrosel = ({ movie }: ItemsType) => {
+
     return (
         <Link
             style={{ textDecoration: "none", color: "black" }}
             href={`/SoloSerie/${movie.id}`}
         >
             <div className='carrossel_movie-img'>
-                <img src={`${REACT_IMG_PATH}${movie.backdrop_path}`} alt="" />
+                <Img img={movie} name={movie.title} />
             </div>
             <div className='carrossel_movie-overlay'>
                 <h1>{movie.title}</h1>
