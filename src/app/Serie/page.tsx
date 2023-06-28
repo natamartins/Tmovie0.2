@@ -2,7 +2,7 @@
 import React from 'react'
 import { Search } from 'lucide-react'
 
-import useSearch from '@/Hooks/useSearch'
+import useSearch from '@/Hook/useSearch'
 
 import BoxCarossel from '@/Components/BoxCarrossel/IndexSerie'
 import CardSeries from '@/Components/CardSeries/Index'

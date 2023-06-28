@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
-import useFetch from '@/Hooks/useFetch'
-import useSearch from '@/Hooks/useSearch'
+import useFetch from '@/Hook/useFetch'
+import useSearch from '@/Hook/useSearch'
 
 import CardCarrosel from '@/Components/CardCarrosel/Carrosel'
 import BoxCarossel from '@/Components/BoxCarrossel/Index'

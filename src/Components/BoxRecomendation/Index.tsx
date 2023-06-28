@@ -1,4 +1,4 @@
-import useFetch from '@/Hooks/useFetch'
+import useFetch from '@/Hook/useFetch'
 import React from 'react'
 import CardMovies from '../CardMovies/CardRecomendation'
 

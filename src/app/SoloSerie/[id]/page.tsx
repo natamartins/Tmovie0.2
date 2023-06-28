@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
-import useFetchId from '@/Hooks/useFetchId';
+import useFetchId from '@/Hook/useFetchId';
 import { useFetchVideo } from '@/Hooks/useFetchVideo';
 
 import formatDate from '@/Utils/formatDate';

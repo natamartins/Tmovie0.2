@@ -1,5 +1,5 @@
 "use client";
-import useFetch from "@/Hooks/useFetch";
+import useFetch from "@/Hook/useFetch";
 
 import BoxCarossel from '@/Components/BoxCarrossel/Index'
 import CardRecomendation from '@/Components/BoxRecomendation/Index'

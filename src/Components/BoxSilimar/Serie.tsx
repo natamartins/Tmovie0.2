@@ -1,6 +1,6 @@
 import React from 'react'
 
-import useFetch from '@/Hooks/useFetch'
+import useFetch from '@/Hook/useFetch'
 
 import { REACT_URL } from '@/api/Urls'
 
