@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 import useFetchId from '@/Hook/useFetchId';
-import { useFetchVideo } from '@/Hooks/useFetchVideo';
+import { useFetchVideo } from '@/Hook/useFetchVideo';
 
 import formatDate from '@/Utils/formatDate';
 import formatTime from '@/Utils/formatTime';

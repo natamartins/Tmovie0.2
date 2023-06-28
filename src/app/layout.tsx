@@ -1,9 +1,11 @@
-import NavBar from '../Components/BoxNavBar/Index'
-import Imgfooter from '@/img/imgfooter.jpg'
 import { Roboto } from 'next/font/google'
 import '../Styles/styles.scss'
 import Image from 'next/image'
 import Link from 'next/link'
+
+import NavBar from '../Components/BoxNavBar/Index'
+import Imgfooter from '@/img/imgfooter.jpg'
+
 
 const roboto = Roboto({
   weight: '500',
@@ -46,7 +48,7 @@ export default function RootLayout({
               <li><Link href="">Company</Link></li>
             </ul>
             <ul>
-              <li><Link href="">Belo Horizonte - MG</Link></li>
+              <li><Link href="">Belo Horizonte  MG</Link></li>
               <li><Link href="">Linkedin</Link></li>
               <li><Link href="">Instagram</Link></li>
             </ul>

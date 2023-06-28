@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 
 import useFetchId from '@/Hook/useFetchId';
-import { useFetchVideo } from '@/Hooks/useFetchVideo';
+import { useFetchVideo } from '@/Hook/useFetchVideo';
 
 import Similar from '@/Components/BoxSilimar/Movie'
 
