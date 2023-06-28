@@ -1,10 +1,9 @@
-"use client";
 import axios from "axios";
 import { useEffect, useState } from "react"
 
 import { REACT_API_KEY, REACT_URL } from "@/api/Urls";
 
-export default function useFetch(url: string) {
+const useFetch = (url: string) => {
     const [data, setData] = useState()
     const [isLoading, setLoading] = useState(false)
 
@@ -23,7 +22,7 @@ export default function useFetch(url: string) {
     useEffect(() => {
         window.scrollTo(0, 0)
         fetchData()
-
+        // eslint-disable-line react-hooks/exhaustive-deps 
     }, [])
 
     return {
@@ -31,3 +30,5 @@ export default function useFetch(url: string) {
         isLoading,
     }
 }
+
+export default useFetch

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 
 import { REACT_API_KEY, REACT_URL } from "@/api/Urls"
 
-export default function useSearch(urlSearch: string, url: string) {
+const useSearch = (urlSearch: string, url: string) => {
     const [item, setMovies] = useState([])
     const [search, setSearch] = useState('')
     const [isFetching, setIsFetching] = useState(true)
@@ -31,6 +31,7 @@ export default function useSearch(urlSearch: string, url: string) {
 
     useEffect(() => {
         fetchMovies(search)
+        // eslint-disable-line react-hooks/exhaustive-deps 
     }, [])
 
     return {
@@ -41,3 +42,5 @@ export default function useSearch(urlSearch: string, url: string) {
         isFetching
     }
 }
+
+export default useSearch

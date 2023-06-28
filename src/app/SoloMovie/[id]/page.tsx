@@ -3,14 +3,13 @@ import React, { useState } from 'react'
 import { REACT_IMG_PATH } from '@/api/Urls';
 
 import YouTube from 'react-youtube'
-import YouTubeMobile from '@u-wave/react-youtube'
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 
 import useFetchId from '@/Hook/useFetchId';
-import { useFetchVideo } from '@/Hook/useFetchVideo';
+import useFetchVideo from '@/Hook/useFetchVideo';
 
 import Similar from '@/Components/BoxSilimar/Movie'
 
@@ -20,12 +19,14 @@ import Img from '@/Components/CardImage/ImgBackground'
 import ImgPost from '@/Components/CardImage/ImgPost'
 import Image from 'next/image';
 
-const opts = {
+const web = {
     height: '500',
     width: '950',
-    // playerVars: {
-    //     autoplay: 1,
-    // },
+};
+
+const mob = {
+    height: '300',
+    width: '350',
 };
 
 const style = {
@@ -53,12 +54,12 @@ const page = ({ params }: any) => {
 
     const playWeb = () => {
         return (
-            <YouTube videoId={video.key} opts={opts} className={'play-web'} />
+            <YouTube videoId={video.key} opts={web} className={'play-web'} />
         )
     }
     const playMobile = () => {
         return (
-            <YouTubeMobile video={video.key} width="350" height="300" />
+            <YouTube videoId={video.key} opts={mob} />
         )
     }
 

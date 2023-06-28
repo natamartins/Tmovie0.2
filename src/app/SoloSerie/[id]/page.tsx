@@ -3,15 +3,13 @@ import React, { useState } from 'react'
 import { REACT_IMG, REACT_IMG_PATH } from '@/api/Urls';
 
 import YouTube from 'react-youtube'
-import YouTubeMobile from '@u-wave/react-youtube'
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 import useFetchId from '@/Hook/useFetchId';
-import { useFetchVideo } from '@/Hook/useFetchVideo';
+import useFetchVideo from '@/Hook/useFetchVideo';
 
 import formatDate from '@/Utils/formatDate';
 import formatTime from '@/Utils/formatTime';
@@ -22,9 +20,14 @@ import Img from '@/Components/CardImage/ImgBackground'
 import ImgPost from '@/Components/CardImage/ImgPost'
 import Image from 'next/image';
 
-const opts = {
+const web = {
     height: '500',
     width: '950',
+};
+
+const mob = {
+    height: '300',
+    width: '350',
 };
 
 const style = {
@@ -52,7 +55,7 @@ const page = ({ params }: any) => {
         const typeVideo = video ? video.key : ''
 
         return (
-            <YouTube videoId={typeVideo} opts={opts} className={'play-web'} />
+            <YouTube videoId={typeVideo} opts={web} className={'play-web'} />
         )
     }
 
@@ -60,7 +63,7 @@ const page = ({ params }: any) => {
         const typeVideo = video ? video.key : ''
 
         return (
-            <YouTubeMobile video={typeVideo} width="350" height="300" />
+            <YouTube videoId={typeVideo} opts={mob} />
         )
     }
 

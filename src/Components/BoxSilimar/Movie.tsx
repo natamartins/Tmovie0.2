@@ -7,7 +7,7 @@ import { REACT_URL } from '@/api/Urls'
 import CardMovies from '@/Components/CardMovies/Movies'
 
 const Movie = ({ id }: any) => {
-    const { data } = useFetch(`/movie/${id}/similar?`)
+    const { data }: any = useFetch(`/movie/${id}/similar?`)
 
     return (
         <div className='box-silimar'>

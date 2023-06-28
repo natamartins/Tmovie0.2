@@ -1,10 +1,9 @@
-"use client";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
 import { REACT_API_KEY, REACT_KEY, REACT_URL } from "@/api/Urls";
 
-export default function useFetchId(url: any) {
+const useFetchId = (url: any) => {
     const [movieId, setMovie] = useState({})
     const [isLoading, setLoading] = useState(false)
 
@@ -25,6 +24,7 @@ export default function useFetchId(url: any) {
     useEffect(() => {
         window.scrollTo(0, 0)
         fetcId()
+        // eslint-disable-line react-hooks/exhaustive-deps 
     }, [])
 
     return {
@@ -33,3 +33,4 @@ export default function useFetchId(url: any) {
     }
 }
 
+export default useFetchId

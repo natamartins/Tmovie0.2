@@ -3,7 +3,7 @@ import { use, useEffect, useState } from "react"
 
 import { REACT_API_KEY, REACT_KEY, REACT_URL } from "@/api/Urls"
 
-export function useFetchVideo(url: string) {
+const useFetchVideo = (url: string) => {
     const [video, setVideo] = useState({})
     const [select, setSelect] = useState({})
     const [keyOpen, setKeyOpen] = useState({})
@@ -31,3 +31,5 @@ export function useFetchVideo(url: string) {
         video
     }
 }
+
+export default useFetchVideo
