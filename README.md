@@ -3,7 +3,7 @@
    🎥<b>Tmovies</b> - The Web that updates you in the world of cinema!
 </h1>
     
-<h2 id="project">📁 Projeto</h2>
+<h2 id="project">📁 Project</h2>
 <p>This is a personal project that I really enjoyed, both the result and the experience generated with it.</p>
 <p>Tmovies is a website where you have access to different films and series, films that are about to be released, that have been released recently and those that already exist on the platforms. You have them all on this site!</p>
 <p>There is the Home section with the top movies and series, a page for films and others for series.</p>
@@ -16,7 +16,7 @@
 
 > Feel free to contribute to this project! Remember that practice makes perfect.
 
-<h2 id="tecnology">💻 Tecnologias</h2>
+<h2 id="tecnology">💻 technology</h2>
 This project was developed with the following technologies:
 
 - Next.JS
@@ -37,7 +37,7 @@ This project was developed with the following technologies:
 - date-fns
 - axios
 
-<h2 id="usage">🎯 Utilização</h2>
+<h2 id="usage">🎯 Use</h2>
 
 The application is available for use [aqui](https://tmovie0-2.vercel.app/). You can also run it on your machine locally. Make sure you have the `Node.js` and the `npm` installed before proceeding with the steps below:
 
