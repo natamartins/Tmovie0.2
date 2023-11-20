@@ -1,35 +1,35 @@
 ## 🔰 Natã Martins 
 <h1 align="center" style="text-align: center;">
-   🎥Tmovies - A Web que te atualiza no mundo dos cinemas!
+   🎥<b>Tmovies</b> - The Web that updates you in the world of cinema!
 </h1>
     
 <h2 id="project">📁 Projeto</h2>
-<p>Esse é um projeto pessoal que gostei muito, tanto do resultado como da experiência gerada com ele.</p>
-<p>Tmovies é um site onde você tem acesso a diversos filmes e séries, filmes que vam lançar, que foram lançados recentemente e os que já existem nas plataformas. Você tem todos nesse site!</p>
-<p>Tem a cessão Home com os tops movie e serie, uma pagina de filmes e outras de séries.</p>
-<p>Tem muito a acrescentar nesse projeto, como sessão de guardar filmes e séries que você marcou com uma estrela, uma sessão de login,  é muito mais.</p>
-<p>Esse é um projeto com ans possibilidades de melhorias e crescimento. O projeto anda em melhorias, ainda não está finalizado 100%.</p>
+<p>This is a personal project that I really enjoyed, both the result and the experience generated with it.</p>
+<p>Tmovies is a website where you have access to different films and series, films that are about to be released, that have been released recently and those that already exist on the platforms. You have them all on this site!</p>
+<p>There is the Home section with the top movies and series, a page for films and others for series.</p>
+<p>There is a lot to add to this project, such as a session for saving films and series that you have marked with a star, a login session, it is much more.</p>
+<p>This is a project with many possibilities for improvement and growth. The project is undergoing improvements, it is not yet 100% finished.</p>
 
-<p>Consumo da api:</p>
+<p>API consumption:</p>
 
 [tmdb](https://developer.themoviedb.org/docs).
 
-> Fique à vontade para contribuir neste projeto! Lembre-se que a prática leva a perfeição.
+> Feel free to contribute to this project! Remember that practice makes perfect.
 
 <h2 id="tecnology">💻 Tecnologias</h2>
-Este projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following technologies:
 
 - Next.JS
 - TypeScript
 - Sass
 
-<h2>Boas práticas</h2>
+<h2>Good habits</h2>
 
 - Clean Code
 - Web Responsivo
 - Componentes
 
-<h2>Bibliotecas</h2>
+<h2>Libraries</h2>
 
 - react-responsive-carousel
 - react-youtube
@@ -39,32 +39,32 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 <h2 id="usage">🎯 Utilização</h2>
 
-A aplicação está disponível para uso [aqui](https://tmovie0-2.vercel.app/). Você também pode executá-la em sua máquina localmente. Certifique-se de ter o `Node.js` e o `npm` instalados antes de prosseguir com as etapas abaixo:
+The application is available for use [aqui](https://tmovie0-2.vercel.app/). You can also run it on your machine locally. Make sure you have the `Node.js` and the `npm` installed before proceeding with the steps below:
 
-1. Clone o projeto:
+1. Clone the project:
 
 ```
 $ git clone https://github.com/natamartins/Tmovie0.2.git
 ```
 
-2. No seu terminal, acesse a pasta do projeto:
+2. In your terminal, access the project folder:
 
 ```
 $ cd Tmovie0.2
 ```
 
-3. Instale as dependências:
+3. Install dependencies:
 
 ```
 $ npm install
 ```
 
-4. Inicie o projeto:
+4. Start the  project:
 
 ```
 $ npm run  dev
 ```
-## rede social
+## social network
 <div style="display: flex;">
   <a href="https://www.linkedin.com/in/nata-martins/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" style="margin-right: 2vw" target="_blank"></a>
 </div>
